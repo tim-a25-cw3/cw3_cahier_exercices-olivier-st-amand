@@ -1,0 +1,77 @@
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+    align-items: center;
+
+    @media (width <= $breakpoint-md) {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        color: var(--color-white);
+        margin-top: 0;
+    }
+
+    .button_card {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        border-radius: 100px;
+        padding: 8px 16px;
+        margin-top: 32px;
+
+        display: flex;
+        flex-direction: center;
+        align-items: center;
+    }
+
+    .tag {
+        font-size: 18px;
+    }
+
+    &:nth-child(even) {
+        .card__content {
+            order: -1;
+
+            @media (width <= $breakpoint-md) {
+                order: 0;
+            }
+        }
+    }
+}
+
+.lab_cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+
+    @media (width <= $breakpoint-md) {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-md);
+    }
+
+    @media (width <= $breakpoint-xs) {
+        grid-template-columns: 1fr;
+    }
+
+    .card__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .card__media {
+        aspect-ratio: 595 / 490;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            border-radius: 16px;
+        }
+    }
+}

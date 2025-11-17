@@ -1,0 +1,34 @@
+.hero {
+    position: relative;
+    height: 80vh;
+
+    .wrapper {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    @media (width <= $breakpoint-xs) {
+        height: 60vh;
+    }
+}
+
+.hero__content {
+    h1 {
+    }
+}
+
+.hero__media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
