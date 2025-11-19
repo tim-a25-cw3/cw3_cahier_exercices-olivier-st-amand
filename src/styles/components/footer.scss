@@ -1,0 +1,42 @@
+.footer{
+    .wrapper{
+        padding: 40px 110px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2{
+        font-size: var(--font-size-footer);
+        text-align: center;
+        margin: 0;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    .icones{
+        display: flex;
+        
+        .icon{
+           margin: 30px 56px;
+           color: var(--color-text);
+
+            @media (width <= $breakpoint-md) {
+              margin: 30px 40px;
+            }
+
+            @media (width <= $breakpoint-xs) {
+              margin: 30px 30px;
+            }
+        }
+
+        .icon--lg{
+            width: 48px;
+            height: 48px;
+        }
+    }
+}

@@ -6,6 +6,10 @@
 // mixins et fonctions utilisés globalement dans le SCSS (Sass)
 @import 'tools/typo';
 
+// SWIPER
+// ici sont chargé le swiper
+@import '../../node_modules/swiper/swiper-bundle';
+
 // SETTINGS
 // Contient les variables sur les polices, les définitions de couleurs, les définitions de  grandeurs,   etc.
 @import 'settings/colors';
@@ -32,3 +36,5 @@
 @import 'components/hero';
 @import 'components/section';
 @import 'components/card';
+@import 'components/pagination';
+@import 'components/footer';

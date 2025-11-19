@@ -1,0 +1,72 @@
+.carousel{
+    background-color: var(--color-primary);
+    padding: 80px 110px;
+
+    .swiper-slide {
+        gap: var(--spacing-lg);
+
+        h2, span{
+            color: var(--color-black);
+            margin-bottom: 100px;
+        }
+
+        .button_card{
+          background-color: var(--color-white);
+          color: var(--color-black);
+          max-width: 230px;
+        }
+     
+        .card__content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+
+          p, span, h3{
+            color: var(--color-black);
+          }
+        }
+
+        .card__media {
+           aspect-ratio: 595 / 490;
+
+           img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              display: block;
+
+              border-radius: 16px;
+           }
+        }
+    }
+}
+
+.js-swiper-navigation{
+    background-color: var(--color-primary);
+}
+
+.swiper-pagination {
+    padding-top: 30px;
+    position: static;
+    --swiper-pagination-bullet-width: 20px;
+    --swiper-pagination-bullet-height: 20px;
+    --swiper-pagination-color: var(--color-white);
+    --swiper-pagination-bullet-inactive-color: var(--color-white);
+    --swiper-pagination-bullet-border-radius: 0;
+    --swiper-pagination-bullet-gap: 0 20px;
+    /*--swiper-pagination-bullet-transform: rotate(90deg);*/
+}
+
+.js-swiper-navigation .swiper-slide {
+    background: unset;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: var(--color-black);
+}
+
+.js-swiper-experimentation .swiper-slide {
+    aspect-ratio: 1;
+}
