@@ -2,31 +2,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-md);
-    align-items: center;
+    align-items: start;
+
 
     @media (width <= $breakpoint-md) {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: block;
     }
 
     h3 {
         text-transform: uppercase;
         color: var(--color-white);
         margin-top: 0;
-    }
-
-    .button_card {
-        background-color: var(--color-primary);
-        color: var(--color-white);
-        border-radius: 100px;
-        padding: 8px 16px;
-        margin-top: 32px;
-        text-transform: uppercase;
-        font-weight: bold;
-
-        display: flex;
-        flex-direction: center;
-        align-items: center;
     }
 
     .tag {
@@ -43,6 +29,20 @@
         }
     }
 }
+
+.button_card {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        border-radius: 100px;
+        padding: 8px 16px;
+        margin-top: auto;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        display: flex;
+        flex-direction: center;
+        align-items: center;
+    }
 
 .lab_cards {
     display: grid;
@@ -63,6 +63,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+
+        height: 464px;
     }
 
     .card__media {
